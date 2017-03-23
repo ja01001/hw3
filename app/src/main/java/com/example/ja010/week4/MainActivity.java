@@ -15,8 +15,8 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     RelativeLayout r1;
-    TextView tc,ts;
-    ImageView im1,im2;
+    TextView tc;
+    ImageView im1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
