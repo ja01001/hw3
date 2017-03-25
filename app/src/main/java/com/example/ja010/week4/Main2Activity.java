@@ -40,7 +40,7 @@ public class Main2Activity extends AppCompatActivity {
         TabHost.TabSpec tas2 = th.newTabSpec("B").setContent(new TabHost.TabContentFactory() {
             @Override
             public View createTabContent(String tag) {
-                View view = View.inflate(Main2Activity.this,R.layout.tt,null); // 외부 xml 객체화
+                View view = View.inflate(Main2Activity.this,R.layout.ty,null); // 외부 xml 객체화
                 return view;
             }
         }).setIndicator("면적 계산기");
@@ -70,14 +70,18 @@ public class Main2Activity extends AppCompatActivity {
                 cmy =0;
             }
             cal(cmx,cmy);
-
-
         }
     public void clcl(View v){
         if(v.getId() == R.id.b1){
             String cm = e1.getText().toString();
             String kg = e2.getText().toString();
             zero(cm,kg);
+        }
+        else if(v.getId() == R.id.bt1){
+
+        }
+        else{
+
         }
     }
     void cal(float a, float b){

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59c6e7"
+    >
+    <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:layout_margin="17dp"
+        android:layout_width="324dp"
+        android:layout_height="469dp"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="평이나 면적을 입력하세요."
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/ett1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:hint="숫자입력"
+                android:background="#FABBCC"
+                android:inputType="number" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <TextView
+                        android:id="@+id/tt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="                                  "
+                        android:textSize="30dp" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <Button
+                android:id="@+id/bt1"
+                android:onClick="clcl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#2081c6"
+                android:text="평을 제곱미터로 변환"
+                android:textColor="#ffffff"
+                android:textSize="25dp"/>
+            <Button
+                android:id="@+id/bt2"
+                android:onClick="clcl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#28b058"
+                android:text="제곱미터를 평으로 변환"
+                android:textColor="#ffffff"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
