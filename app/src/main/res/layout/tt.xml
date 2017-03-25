@@ -8,7 +8,7 @@
     <FrameLayout
         android:layout_gravity="center_vertical"
         android:layout_margin="17dp"
-        android:layout_width="352dp"
+        android:layout_width="324dp"
         android:layout_height="469dp"
         android:background="#ffffff"
         >
@@ -36,7 +36,7 @@
                android:textSize="30dp" />
 
            <EditText
-               android:id="@+id/editText1"
+               android:id="@+id/et1"
                android:layout_width="match_parent"
                android:layout_height="40dp"
                android:ems="10"
@@ -53,7 +53,7 @@
            android:textSize="30dp" />
 
            <EditText
-               android:id="@+id/editText2"
+               android:id="@+id/et2"
                android:layout_width="match_parent"
                android:layout_height="40dp"
                android:ems="10"
@@ -64,6 +64,7 @@
 
            <Button
                android:id="@+id/b1"
+               android:onClick="clcl"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_margin="10dp"
@@ -75,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/text4"
+                android:id="@+id/tx4"
                 android:layout_weight="0.12"
                 android:textSize="20dp"
                 android:text="결과가 없습니다."/>
