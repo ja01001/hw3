@@ -40,5 +40,9 @@
     <item android:title="스프게티"
         android:id="@+id/sp"
         android:checked="false"/>
+
+
 </group>
+    <item android:title="main2 로 연결 "
+        android:id="@+id/men"/>
 </menu>

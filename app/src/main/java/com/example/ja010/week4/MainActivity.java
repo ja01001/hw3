@@ -1,5 +1,6 @@
 package com.example.ja010.week4;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -87,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
                 im1.setRotation(0);
                 item.setChecked(true);
                 break;
+            case R.id.men:
+                Intent a =new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(a);
         }
 
 

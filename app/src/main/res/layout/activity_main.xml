@@ -31,7 +31,7 @@
             android:layout_alignParentBottom="true"
             />
 
-       <!-- <ImageView
+        <ImageView
             android:id="@+id/img2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:visibility="invisible"
             android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"/>
--->
+
 
 
     </RelativeLayout>
