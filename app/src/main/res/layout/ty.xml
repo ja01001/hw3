@@ -58,13 +58,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="                                  "
+                        android:text="계산 결과가 없습니다."
                         android:textSize="30dp" />
                 </TableRow>
 
             </TableLayout>
 
-            <!--android:onClick="clcl"-->
+
             <Button
                 android:onClick="clcl"
                 android:id="@+id/bt1"
