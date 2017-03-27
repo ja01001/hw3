@@ -21,12 +21,9 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+
         tabob();
-        tv1 =(TextView)findViewById(R.id.tx4);
-
-        e1  =(EditText)findViewById(R.id.et1);
-        e2  =(EditText)findViewById(R.id.et2);
-
     }
     void tabob(){
         th =(TabHost)findViewById(R.id.tabhost1);
@@ -56,7 +53,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
      void zero(String a, String b){ // 입력값이 없을때;
-
+         Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();
             if(a.getBytes().length ==0){
                 e1.requestFocus();
                 Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
@@ -72,22 +69,29 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
     public void clcl(View v){
-        e3  =(EditText)findViewById(R.id.ett1);
-        String y = e3.getText().toString();
+
+
         if(v.getId() == R.id.b1){
+            tv1 =(TextView)findViewById(R.id.tx4);
+            e1  =(EditText)findViewById(R.id.et1);
+            e2  =(EditText)findViewById(R.id.et2);
+            //Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();
             String cm = e1.getText().toString();
             String kg = e2.getText().toString();
+        //    Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();
             if(cm.getBytes().length ==0||kg.getBytes().length ==0){
                 zero(cm,kg);
+       //         Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();
             }
-            else{
+            else{//Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();
                 cal(Float.parseFloat(cm),Float.parseFloat(kg));
             }
         }
         else if(v.getId() == R.id.bt1){
+            e3  =(EditText)findViewById(R.id.ett1);
+            String y = e3.getText().toString();
 
-
-//            Toast.makeText(getApplicationContext(),"asd"+y,Toast.LENGTH_SHORT).show();// 오류 검출
+//            Toast.makeText(getApplicationContext(),"asd",Toast.LENGTH_SHORT).show();// 오류 검출
             if(y.getBytes().length== 0){
                 zero_mak();
             }
@@ -96,14 +100,14 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
         else{
+            e3  =(EditText)findViewById(R.id.ett1);
+            String y = e3.getText().toString();
             if(y.getBytes().length== 0){
                 zero_mak();
             }
             else {
                 cal3(y);
             }
-
-
         }
     }
     void cal(float a,  float b){
